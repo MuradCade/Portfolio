@@ -24,7 +24,7 @@ import flutter from '../assets/flutter-logo.svg';
       </Helmet>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div className='col-span-1'>
-                <p className='text-[#5651e5] font-medium text-md uppercase tracking-widest text-center '>About</p>
+                <p className='text-[#5651e5] font-medium text-md uppercase tracking-widest text-start '>About</p>
                 <div className='md:grid grid-cols-2 gap-1 place-items-center relative md:left-10 '>
                     <div className=' relative md:left-10 -left-1   gap-4 mb-4'>
                         <h2 className=' font-medium text-xs text-gray-400'>Who I Am</h2>
