@@ -18,7 +18,7 @@ import flutter from '../assets/flutter-logo.svg';
   render() {
     return (
         
-        <div name='skill' className='w-full h-screen text-center mt-[110px]'>
+        <div name='skill' className='w-full  text-center mt-[110px]'>
         
           {/* skills */}
           <div  className='w-full lg:h-screen p-2 -mt-[70px]'>
