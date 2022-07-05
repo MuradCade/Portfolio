@@ -7,10 +7,8 @@ import { Helmet } from 'react-helmet';
  class links extends Component {
   render() {
     return (
-      <div className='w-full h-screen text-center'>
-            <Helmet>
-        <title>Home</title>
-      </Helmet>
+      <div name='home' className='w-full h-screen text-center'>
+         
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
               <p className='uppercase text-sm tracking-widest text-gray-500'>
@@ -37,7 +35,7 @@ import { Helmet } from 'react-helmet';
             </div>
             {/* download link */}
             <div className='mt-[40px]  flex items-center justify-center cursor-pointer'>
-              <a  href='.././portfolio.apk' className=' text-indigo-500 font-bold mr-1 hover:text-indigo-700' download>Download App</a>
+              <a  href='#' className=' text-indigo-500 font-bold mr-1 hover:text-indigo-700' download>Download App</a>
                 <BsCloudDownload className='text-indigo-500 font-bold  hover:text-indigo-700' size={20}/>
 
             </div>

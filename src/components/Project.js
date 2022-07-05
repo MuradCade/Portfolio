@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
 import chatapp from '../assets/chatapp.jpg';
 import todoapp from '../assets/todo.png';
 import ecommerce from '../assets/ecommerce.png';
@@ -8,10 +7,8 @@ import github from '../assets/github.png';
 class Project extends Component {
     render() {
         return (
-            <div className='w-full'>
-                      <Helmet>
-        <title>Project</title>
-      </Helmet>
+            <div  name='project' className='w-full'>
+              
                 <div className='max-w-[1240px] mx-auto px-2 py-20 '>
                     <p className='text-xl text-[#5651e5] font-medium tracking-widest uppercase mb-4'>Project</p>
                     <h2 className='mt-4 text-xl text-start font-medium text-gray-400'>What I've Built</h2>

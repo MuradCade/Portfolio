@@ -1,6 +1,7 @@
-import React, { useState,Link } from 'react';
+import React, { useState} from 'react';
 import { FaGg, FaBars, FaTimes,FaTwitter,FaGithub,FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from 'react-scroll';
 
 
 
@@ -18,12 +19,32 @@ const Navigation = () => {
         <FaGg size={28} className='ml-4 text-indigo-700' />
         <nav>
           <ul className='hidden md:flex px-5'>
-           
-            <a href='/home' className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>home</a>
-            <a href='/about' className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>about</a>
-            <a href='/project' className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>project</a>
-            <a href='/contact' className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>contact</a>
-          </ul>
+           <li className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>
+           <Link to='home' smooth={true} duration={500}>
+            Home
+          </Link>
+           </li>
+           <li className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>
+           <Link to='about' smooth={true} duration={500}>
+            About
+          </Link>
+           </li>
+           <li className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>
+           <Link to='skill' smooth={true} duration={500}>
+            Skill
+          </Link>
+           </li>
+           <li className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>
+           <Link to='project' smooth={true} duration={500}>
+            Project
+          </Link>
+           </li>
+           <li className='ml-4 text-md capitalize hover:border-b cursor-pointer font-medium hover:text-indigo-600'>
+           <Link to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
+           </li>
+            </ul>
           <div onClick={handlenav}  className="md:hidden mr-2 cursor-pointer">
             <FaBars size={20} className='cursor-pointer'/>
           </div>
@@ -41,16 +62,37 @@ const Navigation = () => {
                 <FaTimes size={20} className='ml-4 text-indigo-700 relative top-2 right-2' />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
+            <div className='border-b border-gray-300 my-2'>
               <p className='capitalize font-medium px-4 w-[85%] md:w-[90%] py-4'>let's build something legendary together</p>
             </div>
           </div>
-          <div className='py-2'>
+          <div className='-mt-4'>
             <ul className='capitalize flex flex-col'>
-              <a href='/home' className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>home</a>
-              <a href='/about' className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>about</a>
-              <a href='/project' className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>project</a>
-              <a href='/contact' className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>contact</a>
+           <li className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>
+           <Link to='home' smooth={true} duration={500}>
+            Home
+          </Link>
+           </li>
+           <li className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>
+           <Link to='about' smooth={true} duration={500}>
+            About
+          </Link>
+           </li>
+           <li className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>
+           <Link to='skill' smooth={true} duration={500}>
+            Skill
+          </Link>
+           </li>
+           <li className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>
+           <Link to='project' smooth={true} duration={500}>
+            Project
+          </Link>
+           </li>
+           <li className='py-2 text-md ml-4 bg-[#ecf0f3] w-full mb-4 px-2 hover:bg-indigo-100 hover:text-indigo-400 font-medium cursor-pointer'>
+           <Link to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
+           </li>
             </ul>
           </div>
           {/* contact */}

@@ -1,12 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
 
 const Contact = () =>{
     return(
-        <div className='w-full'>
-                     <Helmet>
-        <title>Contact</title>
-      </Helmet>
+        <div  name='contact' className='w-full'>
+        
             <div className='max-w-[1240px] mx-auto px-2 py-20 '>
             <div name='contact' className='w-full h-screen  flex justify-center items-center p-4'>
         <form method='POST' action="https://getform.io/f/c3c3cc54-24d9-4c34-93e8-f2948a80c6f3" className='flex flex-col max-w-[600px] w-full'>
