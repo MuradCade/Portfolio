@@ -20,6 +20,7 @@ import Navigation from './components/Navigation'
 import Home from './components/Home';
 // import About from './components/About';
 import Project from './components/Project';
+import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Skill = lazy(() => import('./components/Skill'));
@@ -37,7 +38,7 @@ const App = () => (
         <Route path="/About" element={<About />} />
         <Route path="/home" element={<Home />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Suspense>
   </Router>
