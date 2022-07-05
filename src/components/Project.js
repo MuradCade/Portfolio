@@ -7,7 +7,7 @@ import github from '../assets/github.png';
 class Project extends Component {
     render() {
         return (
-            <div  name='project' className='w-full'>
+            <div  name='project' className='w-full mt-[110px]'>
               
                 <div className='max-w-[1240px] mx-auto px-2 py-20 '>
                     <p className='text-xl text-[#5651e5] font-medium tracking-widest uppercase mb-4'>Project</p>
