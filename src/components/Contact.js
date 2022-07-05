@@ -18,6 +18,7 @@ const Contact = () =>{
             <button className='text-white bg-pink-600 border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
         </form>
     </div>
+            <p className='text-gray-500 text-center mt-4 font-medium'>Designed & Built by MuradCade</p>
             </div>
     </div>
     )
